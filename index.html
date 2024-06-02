@@ -4,9 +4,393 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Portfolio">
+    <meta name="robots" content="index,follow">
+    <title>Yuliia Zaharia Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/stylesheet/loader.css">
+    <link rel="stylesheet" href="./assets/stylesheet/index.css">
+    <link rel="stylesheet" href="./assets/stylesheet/tablet.css" media="screen and (min-width: 760px)">
+    <link rel="stylesheet" href="./assets/stylesheet/desktop.css" media="screen and (min-width: 980px)">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/ae0fd6f99f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
+
 <body>
+    <div class="container--loader">
+        <div class="loader"></div>
+    </div>
+
+    <header class="header">
+        <img src="./assets/images/dev-heart-logo.png" alt="Logo" class="logo__header">
+
+        <nav class="nav_menu not-active">
+            <a href="#home" class="active">About</a>
+            <a href="#abilities">What I do</a>
+            <a href="#skills">Skills</a>
+            <a href="#awards">Certificates</a>
+            <a href="#websites">Websites</a>
+            <a href="#apps">Apps</a>
+            <a href="#contacts">Contact</a>
+        </nav>
+
+        <div id="button" class="btn not-active">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <!-- About-->
+        <section class="home" id="home">
+            <picture class="container_image-home" data-aos="zoom-in">
+                <img class="image_home" src="./assets/images/dev-main1.png" alt="dev">
+            </picture>
+            
+            <div class="home_info">
+                <div class="container_text-info">
+                    <p class="home_text-1">Hey, everyone!</p>
+                    <p class="home_text-2">My name is Yuliia.</p>
+                </div>
+
+                <div>
+                    <p class="home_text-3 text-type">I create accessible and beautiful things for the web.</p>
+                </div>
+
+                <div class="container_description-info">
+                    <p>I'm a second-year Computer Science and interface design student at University of the People (USA). I have experience creating and designing websites and apps, including basic landing pages to sophisticated web frameworks. In addition to making software run smoothly, my target is to design user interfaces that are pixel-perfect and intuitive. I adore discovering new and improved techniques for using readable, scalable, and efficient code to produce flawless user experiences. I see my job as a continuous learning process, and I'm looking for chances to collaborate with people who are equally inspired by innovative and functional web experiences for better future. My main goal is to work with people who bring out the best in me to develop something useful at the end of the day.</p>
+                </div>
+
+                <div class="container_button">
+                    <a href="./assets/images/Yuliia-Zaharia-CV.pdf" target="_blank">
+                        <button class="customer_policy">Resume</button>
+                    </a>
+                    <a href="#contacts">
+                        <button class="contact_button">Contact</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="links">
+                <a href="https://www.linkedin.com/in/yuliia-zaharia/" target="_blank">
+                    <img src="./assets/images/icons8-linkedin-circled-100.png" alt="LinkedIn" class="icon-linkedin">
+                </a>
+                <a href="https://github.com/YuliiaZaharia" target="_blank">
+                    <img src="./assets/images/icons8-github-100.png" alt="Github" class="icon-github">
+                </a>
+                <a href="https://www.instagram.com/yuliia.zaharia/" target="_blank">
+                    <img src="./assets/images/icons8-instagram-100.png" alt="Instagram" class="icon-instagram">
+                </a>
+            </div>
+        </section>
+
+        <!-- What I do -->
+        <section class="abilities" id="abilities">
+            <h1>What I do</h1>
+
+            <div class="container_content-abilities">
+                <div class="container_text-abilities">
+                    <span class="text_abilities">Using modern programming languages, I develop detailed websites and apps while maintaining a semantic and modular code base. I work to build and implement responsive and aesthetically pleasing interfaces for websites and apps that adapt to any type of device, platform, or browser. Beyond coding, I am a big fan of diversity in the tech industry, especially for women. I believe that women in the tech world can be really powerful and accountable players. As a refugee from Ukraine, I was selected to participate in web development classes via the SheCodes Foundation, which marked the beginning of my coding career. I've had the privilege to learn from the top instructors connected to Google and Airbnb. In addition, I was honored with a scholarship to earn a bachelor's degree in computer science at American University. I can't wait to start new projects and am looking forward to the next chapters in the digital technologies.
+                    </span>
+                </div>
     
+                <picture class="container_image-abilities" data-aos="fade-right">
+                    <img class="image_abilities" src="./assets/images/what_i_do_pic.png" alt="career">
+                </picture>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills" id="skills">
+            <h1>Skills</h1>
+
+            <div class="cards_container--skills" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                <div class="cards--skills">
+                <i class="devicon-javascript-plain colored"></i>
+                <p>JavaScript</p>
+                </div>
+                
+                <div class="cards--skills">
+                <i class="devicon-html5-plain colored"></i>
+                <p>HTML5</p>
+                </div>
+
+                <div class="cards--skills">
+                <i class="devicon-css3-plain colored"></i>
+                <p>CSS3</p>
+                </div>
+
+                <div class="cards--skills">   
+                    <i class="devicon-bootstrap-plain colored"></i>
+                    <p>Bootstrap</p>
+                </div>
+
+                <div class="cards--skills"> 
+                    <i class="devicon-react-original colored"></i>
+                    <p>React</p>
+                </div>
+
+                <div class="cards--skills">    
+                    <i class="devicon-git-plain colored"></i>
+                    <p>Git</p>
+                </div>
+                
+                <div class="cards--skills">
+                    <i class="devicon-github-original colored"></i>
+                    <p>Github</p>
+                </div>
+
+                <div class="cards--skills">  
+                    <i class="devicon-fastapi-plain colored"></i>
+                    <p>API</p>
+                </div>
+
+                <div class="cards--skills"> 
+                    <i class="devicon-java-plain colored"></i>
+                    <p>Java</p>
+                </div>
+
+                <div class="cards--skills"> 
+                    <i class="devicon-python-plain colored"></i>
+                    <p>Python</p>
+                </div>
+                
+                <div class="cards--skills">
+                    <i class="devicon-figma-plain colored"></i>
+                    <p>Figma</p>
+                </div>
+
+                <div class="cards--skills">
+                    <i class="devicon-vscode-plain colored"></i>
+                    <p>VS Code</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates -->
+        <section class="awards" id="awards">
+            <h1>Certificates</h1>
+
+            <div class="cards_container--awards">
+                <div class="cards--awards" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                    <img class="logo-zero" src="./assets/images/CanSheCode_Certificate.jpeg" alt="award">
+                    <div class="container_text--awards">
+                        <p>Introduction to web-development</p>
+                        <p>2022</p>
+                    </div>
+                </div>
+
+                <div class="cards--awards" data-aos="fade-up" data-aos-duration="500">
+                    <img class="logo-one" src="./assets/images/GoIT_HTML diploma.jpeg" alt="golden">
+                    <div class="container_text--awards">
+                        <p>English in Programming</p>
+                        <p>2022</p>
+                    </div>
+                </div>
+
+                <div class="cards--awards" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                    <img class="logo-two" src="./assets/images/SheCodes_Basic.png" alt="gold">
+                    <div class="container_text--awards">
+                        <p>HTML/CSS basics</p>
+                        <p>2022</p>
+                    </div>
+                </div>
+        
+                <div class="cards--awards" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                    <img class="logo-zero" src="./assets/images/SheCodes_Plus.png" alt="award">
+                    <div class="container_text--awards">
+                        <p>JavaScript Fundamentials</p>
+                        <p>2022</p>
+                    </div>
+                </div>
+
+                <div class="cards--awards" data-aos="fade-up" data-aos-duration="500">
+                    <img class="logo-one" src="./assets/images/SheCodes_Responsive.png" alt="golden">
+                    <div class="container_text--awards">
+                        <p>Responsive web-development</p>
+                        <p>2023</p>
+                    </div>
+                </div>
+
+                <div class="cards--awards" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                    <img class="logo-two" src="./assets/images/SheCodes_React.png" alt="gold">
+                    <div class="container_text--awards">
+                        <p>React Course</p>
+                        <p>2023</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Websites -->
+        <section class="websites" id="websites">
+            <h1>Websites</h1>
+
+            <div class="cards_container--websites">
+
+                <div class="cards--websites card_research" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <div class="container_imgCard--websites">
+                        <a href="https://genuine-chebakia-f3f6a8.netlify.app/" target="_blank">
+                        <img src="./assets/images/solar-panels-project.png" alt="websites" height="230px">
+                        </a>
+                    </div>
+
+                    <div class="container_textCard--websites">
+                        <h2>Sustainable Energy Website</h2>
+                        <p>I have created a digital product using HTML, CSS, JavaScript, and PHP for European solar panels company. It has "About" page, project displays, a blog, and an easy-to-use contact part with the ability to obtain a quote. Color pallete is perfectly matching main idea of website - eco-friendly vibes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cards--websites card_cooperation" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <div class="container_imgCard--websites">
+                        <a href="https://exquisite-chimera-f558a2.netlify.app/" target="_blank">
+                        <img src="./assets/images/medicare-poster.png" alt="websites" height="230px">
+                        </a>
+                    </div>
+
+                    <div class="container_textCard--websites">
+                        <h2>Medical Distributor Website</h2>
+                        <p>Qatari medical device company's digital platform. Using HTML, CSS, JS, and PHP, I've painstakingly created a user-friendly and educational website. Explore carefully chosen selection of innovative medical items, which are presented to make it simple to explore and understand.</p>
+                    </div>
+                </div>
+
+                <div class="cards--websites card_supplier" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <div class="container_imgCard--websites">
+                        <a href="https://roaring-fudge-d3934d.netlify.app/">
+                        <img src="./assets/images/furniture-website.png" alt="furniture" height="230px">
+                        </a>
+                    </div>
+
+                    <div class="container_textCard--websites">
+                        <h2>Furniture Shop Website</h2>
+                        <p>Innovative and visually captivating platform crafted predominantly with HTML, CSS, and dynamic JavaScript elements. Embracing creativity and modern design, this online shop showcases a curated collection of furniture products, presented in an engaging and contemporary style.</p>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+          <!-- Apps -->
+          <section class="apps" id="apps">
+            <h1>Apps</h1>
+
+            <div class="cards_container--websites">
+
+                <div class="cards--websites card_research" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <div class="container_imgCard--websites">
+                        <a href="https://helpful-blancmange-a5ad06.netlify.app/" target="_blank">
+                        <img src="./assets/images/split-bill-project.png" alt="split" height="230px">
+                        </a>
+                    </div>
+
+                    <div class="container_textCard--websites">
+                        <h2>Split Your Bill App</h2>
+                        <p>App gives a variety of tipping alternatives, with percentages of 10%, 20%, or 30% to pick from, or no tip at all. Make sure that bills are allocated fairly and precisely, whether you're dining out, traveling, or sharing expenses. You can concentrate on spending time with your loved one, leaving math to the app.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cards--websites card_cooperation" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <div class="container_imgCard--websites">
+                        <a href="https://extraordinary-gelato-b1fd60.netlify.app/" target="_blank">
+                        <img src="./assets/images/meditation-app.png" alt="meditation" height="230px">
+                        </a>
+                    </div>
+
+                    <div class="container_textCard--websites">
+                        <h2>Meditation App</h2>
+                        <p>This app built with HTML, CSS and JS. Platform is offering the ideal atmosphere to meditate, de-stress, and discover inner peace, whether you're looking for the calming patter of raindrops, the rhythmic crashing of waves, or the melodic sounds of nature.</p>
+                    </div>
+                </div>
+
+                <div class="cards--websites card_supplier" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <div class="container_imgCard--websites">
+                        <a href="https://magenta-hamster-3f9006.netlify.app/" target="_blank">
+                        <img src="./assets/images/weather-app-react.png" alt="weather-app-react" height="230px">
+                        </a>
+                    </div>
+
+                    <div class="container_textCard--websites">
+                        <h2>React Weather App</h2>
+                        <p>User-friendly platform, built with React.js and API, allows access to real-time weather updates for your current location and offers a search engine to check weather details for any place worldwide. Get instant insights into temperature, humidity, feels-like, wind speed, pressure, and a five-day forecast.</p>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <!-- Contact -->
+        <section class="contacts" id="contacts">
+            <h1>Get In Touch</h1>
+
+            <div class="container_box--contacts" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+    
+                <div class="container--contacts">
+                    <div class="container_text--contacts">
+                        <p>Have a project in mind or just want to say hi? Feel free to send me a message!</p>
+                    </div>
+    
+                    <form id="form" class="form-contact" name="contacts-holding" netlify>
+                        <input id="name" type="text" name="name" placeholder="Name" required>
+                        <input id="email" type="email" name="email" placeholder="E-mail" required>
+                        <input id="number" type="text" name="phone" placeholder="Subject" required>
+                        <textarea id="message" cols="20" rows="4" name="message" placeholder="Message" required></textarea>
+    
+                        <div class="btn_form--contacts">
+                            <button id="btn-submit" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container--footer">
+            <div class="container_net-footer">
+                <a href="mailto:yuliia.zaharia@gmail.com" target="_blank">
+                    <img src="./assets/images/icons8-gmail-100.png" alt="Email">
+                </a>
+                <a href="https://www.linkedin.com/in/yuliia-zaharia/" target="_blank">
+                    <img src="./assets/images/icons8-linkedin-circled-100.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/YuliiaZaharia" target="_blank">
+                    <img src="./assets/images/icons8-github-100.png" alt="GitHub">
+                </a>
+                <a href="https://www.instagram.com/yuliia.zaharia/?next=%2F" target="_blank">
+                    <img src="./assets/images/icons8-instagram-100.png" alt="Instagram">
+                </a>
+                <a href="https://codepen.io/YuliiaUkraine" target="_blank">
+                    <img src="./assets/images/icons8-codepen-100.png" alt="Codepen">
+                </a>
+            </div>
+
+            <div class="container_text--footer">
+                <span>© Dev Heart 2024</span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="go-top-container">
+        <div class="go-top-button">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        AOS.init();
+    </script>
+    <script src="./script.js"></script>
 </body>
 </html>
